@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="play_pause" onPause="play_pause">
+  <tabs color="blue">
+    <tab text="Playback">
+      <row>
+        <button icon="vdown" onTap="volume_down" />
+        <button icon="vmute" onTap="volume_mute" />
+        <button icon="vup" onTap="volume_up" />
+      </row>
+      <row>
+        <button icon="rwd" onTap="backward" />
+        <button icon="ff" onTap="forward" />
+        <button icon="playpause" onTap="play_pause" />
+        <button icon="stop" onTap="stop" />
+      </row>
+      <row>
+        <button icon="previous" onTap="previous" />
+        <button icon="next" onTap="next" />
+        <button text="OSD" onTap="osd" />
+        <button icon="fullscreen" onTap="fullscreen" />
+      </row>
+    </tab>
+    <tab text="Audio/Subtitles">
+      <row weight="wrap">
+        <label color="hard" text="Subtitle options" />
+      </row>
+      <row>
+        <button text="Toggle" onTap="toggle_subs" />
+        <button text="Switch" onTap="switch_subs" />
+      </row>
+      <row weight="wrap">
+        <label color="hard" text="Subtitle delay" />
+      </row>
+      <row>
+        <button icon="down" onTap="subtitle_delay_down" />
+        <button icon="up" onTap="subtitle_delay_up" />
+      </row>
+      <row weight="wrap">
+        <label color="hard" text="Audio delay" />
+      </row>
+      <row >
+        <button icon="down" onTap="audio_delay_down" />
+        <button icon="up" onTap="audio_delay_up" />
+      </row>
+    </tab>
+  </tabs>
+</layout>
