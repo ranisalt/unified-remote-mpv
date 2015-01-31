@@ -68,7 +68,7 @@ actions.fullscreen = function()
 end
 
 actions.osd = function()
-  kb.stroke("o");
+  kb.stroke("O");
 end
 
 --@help Increase subtitle delay
@@ -83,10 +83,10 @@ end
 
 --@help Increase audio delay
 actions.audio_delay_down = function()
-  kb.stroke("minus");
+  kb.stroke("ctrl", "minus");
 end
 
 --@help Decrease audio delay
 actions.audio_delay_up = function()
-  kb.stroke("plus");
+  kb.stroke("ctrl", "plus");
 end
