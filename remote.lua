@@ -3,8 +3,8 @@ local fs = libs.fs;
 
 events.detect = function ()
 	return
-    fs.exists("/usr/bin/mplayer") or
-    fs.exists("/bin/mplayer");
+    fs.exists("/usr/bin/mpv") or
+    fs.exists("/bin/mpv");
 end
 
 --@help Lower volume
