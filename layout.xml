@@ -42,6 +42,14 @@
         <button icon="down" onTap="audio_delay_down" />
         <button icon="up" onTap="audio_delay_up" />
       </row>
+      <row weight="wrap">
+        <label color="hard" text="Playback speed" />
+      </row>
+      <row >
+        <button icon="rwd" onTap="playback_speed_down" />
+        <button icon="play" onTap="playback_speed_reset" />
+        <button icon="ff" onTap="playback_speed_up" />
+      </row>
     </tab>
   </tabs>
 </layout>

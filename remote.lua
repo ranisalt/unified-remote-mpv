@@ -90,3 +90,18 @@ end
 actions.audio_delay_up = function()
   kb.stroke("ctrl", "plus");
 end
+
+--@help Decrease playback speed
+actions.playback_speed_down = function()
+  kb.text("[");
+end
+
+--@help Increase playback speed
+actions.playback_speed_up = function()
+  kb.text("]");
+end
+
+--@help Reset playback speed
+actions.playback_speed_reset = function()
+  kb.stroke("backspace");
+end
